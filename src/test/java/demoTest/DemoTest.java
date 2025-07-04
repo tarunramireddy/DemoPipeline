@@ -13,7 +13,7 @@ public class DemoTest {
 WebDriverManager.chromedriver().clearResolutionCache().setup();
         
         WebDriver driver = new ChromeDriver();
-        driver.get("https://www.google.com");
+        driver.get("https://www.facebook.com");
         driver.manage().window().maximize();
         System.out.println("Title of the page is: " + driver.getTitle());
         // Add a sleep to see the browser before it closes
@@ -22,7 +22,7 @@ WebDriverManager.chromedriver().clearResolutionCache().setup();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }       
-
+        dricver.close();
         driver.quit();
     }
 }
