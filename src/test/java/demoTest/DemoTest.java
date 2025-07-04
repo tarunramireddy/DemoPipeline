@@ -10,6 +10,8 @@ public class DemoTest {
     @Test
     public void openGoogle() {
         WebDriverManager.chromedriver().setup();
+System.out.println("ChromeDriver binary: " + WebDriverManager.chromedriver().getDownloadedDriverPath());
+
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.google.com");
         driver.manage().window().maximize();
