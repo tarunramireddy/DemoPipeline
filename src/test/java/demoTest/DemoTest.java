@@ -22,7 +22,7 @@ WebDriverManager.chromedriver().clearResolutionCache().setup();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }       
-        dricver.close();
+        driver.close();
         driver.quit();
     }
 }
