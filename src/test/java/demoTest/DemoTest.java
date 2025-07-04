@@ -9,7 +9,9 @@ public class DemoTest {
 
     @Test
     public void openGoogle() {
-        WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().clearDriverCache().setup();
+WebDriverManager.chromedriver().clearResolutionCache().setup();
+        
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.google.com");
         driver.manage().window().maximize();
