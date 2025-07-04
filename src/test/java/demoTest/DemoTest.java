@@ -13,7 +13,7 @@ public class DemoTest {
 WebDriverManager.chromedriver().clearResolutionCache().setup();
         
         WebDriver driver = new ChromeDriver();
-        driver.get("https://www.facebook.com");
+        driver.get("https://www.apple.com");
         driver.manage().window().maximize();
         System.out.println("Title of the page is: " + driver.getTitle());
         // Add a sleep to see the browser before it closes
